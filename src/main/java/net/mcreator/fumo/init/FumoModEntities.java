@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.fumo.entity.YoumuEntity;
 import net.mcreator.fumo.entity.TanCirnoEntity;
 import net.mcreator.fumo.entity.ReimuEntity;
 import net.mcreator.fumo.entity.NewReimuEntity;
@@ -60,6 +61,8 @@ public class FumoModEntities {
 			EntityType.Builder.<FlandreEntity>of(FlandreEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlandreEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<MeilingEntity>> MEILING = register("meiling",
 			EntityType.Builder.<MeilingEntity>of(MeilingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MeilingEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<YoumuEntity>> YOUMU = register("youmu",
+			EntityType.Builder.<YoumuEntity>of(YoumuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YoumuEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -81,6 +84,7 @@ public class FumoModEntities {
 			KoishiEntity.init();
 			FlandreEntity.init();
 			MeilingEntity.init();
+			YoumuEntity.init();
 		});
 	}
 
@@ -99,5 +103,6 @@ public class FumoModEntities {
 		event.put(KOISHI.get(), KoishiEntity.createAttributes().build());
 		event.put(FLANDRE.get(), FlandreEntity.createAttributes().build());
 		event.put(MEILING.get(), MeilingEntity.createAttributes().build());
+		event.put(YOUMU.get(), YoumuEntity.createAttributes().build());
 	}
 }
