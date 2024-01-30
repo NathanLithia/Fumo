@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "fumo:reimu_item"
+    },
+    "title": {
+      "translate": "advancements.bootleg_fumo_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.bootleg_fumo_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bootleg_fumo_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fumo:reimu_item"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "fumo:fumo_advancement"
+}

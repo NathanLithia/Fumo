@@ -19,5 +19,9 @@ public class CreateTanCirnoProcedure {
 			_level.getServer().getCommands().performPrefixedCommand(
 					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					("/summon fumo:tan_cirno ~ ~ ~ " + "{Rotation:[" + entity.getYRot() + "f]}"));
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(
+					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/advancement grant @p only fumo:tan_cirno_achievement");
 	}
 }

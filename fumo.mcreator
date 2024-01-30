@@ -13,7 +13,7 @@
           "src/main/java/net/mcreator/fumo/client/renderer/ReimuRenderer.java"
         ]
       },
-      "path": "~/Reimu"
+      "path": "~/BootlegReimu"
     },
     {
       "name": "Marisa",
@@ -118,7 +118,7 @@
           "src/main/java/net/mcreator/fumo/item/ReimuItemItem.java"
         ]
       },
-      "path": "~/Reimu"
+      "path": "~/BootlegReimu"
     },
     {
       "name": "MarisaItem",
@@ -233,7 +233,7 @@
           }
         ]
       },
-      "path": "~/Reimu"
+      "path": "~/BootlegReimu"
     },
     {
       "name": "EikiSpawn",
@@ -355,7 +355,7 @@
           "src/main/resources/data/fumo/recipes/reimu_craft.json"
         ]
       },
-      "path": "~/NewReimu"
+      "path": "~/Reimu"
     },
     {
       "name": "Cirno",
@@ -729,7 +729,7 @@
           "src/main/java/net/mcreator/fumo/client/renderer/NewReimuRenderer.java"
         ]
       },
-      "path": "~/NewReimu"
+      "path": "~/Reimu"
     },
     {
       "name": "NewReimuItem",
@@ -744,7 +744,7 @@
           "src/main/java/net/mcreator/fumo/item/NewReimuItemItem.java"
         ]
       },
-      "path": "~/NewReimu"
+      "path": "~/Reimu"
     },
     {
       "name": "NewReimuSpawn",
@@ -780,7 +780,7 @@
           }
         ]
       },
-      "path": "~/NewReimu"
+      "path": "~/Reimu"
     },
     {
       "name": "BlueReimu",
@@ -874,7 +874,7 @@
           }
         ]
       },
-      "path": "~/NewReimu"
+      "path": "~/Reimu"
     },
     {
       "name": "Koishi",
@@ -1094,6 +1094,200 @@
         ]
       },
       "path": "~/Flandre"
+    },
+    {
+      "name": "TanCirnoAchievement",
+      "type": "achievement",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tan_cirno_achievement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/tan_cirno_achievement.json"
+        ]
+      },
+      "path": "~/TanCirno"
+    },
+    {
+      "name": "CirnoAdvancement",
+      "type": "achievement",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cirno_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/cirno_advancement.json"
+        ]
+      },
+      "path": "~/Cirno"
+    },
+    {
+      "name": "ReimuAdvancement",
+      "type": "achievement",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reimu_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/reimu_advancement.json"
+        ]
+      },
+      "path": "~/Reimu"
+    },
+    {
+      "name": "MarisaAdvancement",
+      "type": "achievement",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marisa_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/marisa_advancement.json"
+        ]
+      },
+      "path": "~/Marisa"
+    },
+    {
+      "name": "MarisaHatAdvancement",
+      "type": "achievement",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marisa_hat_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/marisa_hat_advancement.json"
+        ]
+      },
+      "path": "~/Marisa Hat"
+    },
+    {
+      "name": "EikiAdvancement",
+      "type": "achievement",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eiki_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/eiki_advancement.json"
+        ]
+      },
+      "path": "~/Eiki"
+    },
+    {
+      "name": "ChenAdvancement",
+      "type": "achievement",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chen_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/chen_advancement.json"
+        ]
+      },
+      "path": "~/Chen"
+    },
+    {
+      "name": "BlueReimuAdvancement",
+      "type": "achievement",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_reimu_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/blue_reimu_advancement.json"
+        ]
+      },
+      "path": "~/BlueReimu"
+    },
+    {
+      "name": "KoishiAdvancement",
+      "type": "achievement",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koishi_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/koishi_advancement.json"
+        ]
+      },
+      "path": "~/Koishi"
+    },
+    {
+      "name": "FlandeAdvancement",
+      "type": "achievement",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flande_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/flande_advancement.json"
+        ]
+      },
+      "path": "~/Flandre"
+    },
+    {
+      "name": "FumoAdvancement",
+      "type": "achievement",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumo_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/fumo_advancement.json"
+        ]
+      },
+      "path": "~/Base"
+    },
+    {
+      "name": "BootlegReimuTrade",
+      "type": "villagertrade",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bootleg_reimu_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/BootlegReimu"
+    },
+    {
+      "name": "BootlegFumoAdvancement",
+      "type": "achievement",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bootleg_fumo_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/bootleg_fumo_advancement.json"
+        ]
+      },
+      "path": "~/Base"
+    },
+    {
+      "name": "BootLegReimuAdvancement",
+      "type": "achievement",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boot_leg_reimu_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/boot_leg_reimu_advancement.json"
+        ]
+      },
+      "path": "~/BootlegReimu"
     }
   ],
   "variable_elements": [],
@@ -1109,33 +1303,59 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.fumo_scream": "Fumo",
-      "item.fumo.koishi_item": "Koishi Komeiji",
+      "advancements.tan_cirno_achievement.descr": "Give Cirno an electrifying tan.",
+      "advancements.boot_leg_reimu_advancement.title": "Boot Leg Reimu Advancement",
       "item.fumo.creative_tab_icon": "Creative Tab Icon",
-      "item.fumo.new_reimu_item": "Reimu Hakurei",
-      "item.fumo.flandre_item": "Flandre Scarlet",
       "item.fumo.fumoitem": "Debug Fumo",
       "entity.fumo.chen": "Chen",
-      "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
       "item.fumo.marisa_item": "Marisa Kirisame",
       "item.fumo.chen_item": "Chen",
-      "entity.fumo.koishi": "Koishi Komeiji",
+      "advancements.tan_cirno_achievement.title": "Tan Cirno",
       "item.fumo.eiki_item": "Eiki Shiki",
       "item.fumo.marisa_hat_item": "Marisa Kirisame",
       "entity.fumo.new_reimu": "Reimu Hakurei",
+      "advancements.marisa_hat_advancement.descr": "Crafted Marisa",
       "item.fumo.tan_cirno_item": "Tan Cirno",
       "entity.fumo.reimu": "Bootleg Reimu Hakurei",
-      "entity.fumo.tan_cirno": "Tan Cirno",
       "entity.fumo.cirno": "Cirno",
-      "entity.fumo.eiki": "Eiki Shiki",
       "entity.fumo.debug_fumo": "Debug Fumo",
       "entity.fumo.blue_reimu": "Reimu Hakurei",
-      "item.fumo.cirno_item": "Cirno",
+      "advancements.blue_reimu_advancement.descr": "Obtained Blue Reimu",
       "item_group.fumo.fumo_tab": "Fumo",
+      "advancements.koishi_advancement.descr": "Obtained Koishi",
+      "advancements.bootleg_fumo_advancement.title": "Bootleg",
       "entity.fumo.marisa_hat": "Marisa Kirisame",
+      "advancements.boot_leg_reimu_advancement.descr": "Bootleg Reimu Obtained",
+      "advancements.marisa_advancement.descr": "Marisa in the oven",
+      "advancements.chen_advancement.descr": "Obtained Chen",
+      "advancements.cirno_advancement.title": "Cirno",
+      "advancements.reimu_advancement.descr": "Craft Reimu",
+      "advancements.flande_advancement.descr": "Obtained Flandre",
+      "subtitles.fumo_scream": "Fumo",
+      "advancements.fumo_advancement.title": "Fumo",
+      "item.fumo.koishi_item": "Koishi Komeiji",
+      "advancements.cirno_advancement.descr": "Craft a Cirno",
+      "item.fumo.new_reimu_item": "Reimu Hakurei",
+      "advancements.eiki_advancement.title": "Eiki Advancement",
+      "advancements.blue_reimu_advancement.title": "Blue Reimu",
+      "advancements.bootleg_fumo_advancement.descr": "Obtain your fumo\u0027s from alternate sources",
+      "item.fumo.flandre_item": "Flandre Scarlet",
+      "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
+      "advancements.eiki_advancement.descr": "Obtained Eiki",
+      "entity.fumo.koishi": "Koishi Komeiji",
+      "entity.fumo.tan_cirno": "Tan Cirno",
+      "advancements.marisa_hat_advancement.title": "Marisa \u0026 Her hat",
+      "entity.fumo.eiki": "Eiki Shiki",
+      "item.fumo.cirno_item": "Cirno",
+      "advancements.koishi_advancement.title": "Koishi Advancement",
       "entity.fumo.flandre": "Flandre Scarlet",
+      "advancements.fumo_advancement.descr": "Begin your fumo adventure",
       "entity.fumo.marisa": "Marisa Kirisame",
-      "item.fumo.reimu_item": "Bootleg Reimu Hakurei"
+      "advancements.flande_advancement.title": "Flande Advancement",
+      "advancements.chen_advancement.title": "Chen Advancement",
+      "advancements.marisa_advancement.title": "Marisa with no hat!",
+      "item.fumo.reimu_item": "Bootleg Reimu Hakurei",
+      "advancements.reimu_advancement.title": "Reimu Advancement"
     }
   },
   "foldersRoot": {
@@ -1146,7 +1366,7 @@
         "children": []
       },
       {
-        "name": "Reimu",
+        "name": "BootlegReimu",
         "children": []
       },
       {
@@ -1174,7 +1394,7 @@
         "children": []
       },
       {
-        "name": "NewReimu",
+        "name": "Reimu",
         "children": []
       },
       {
