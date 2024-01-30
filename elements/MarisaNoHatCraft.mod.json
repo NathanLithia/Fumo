@@ -11,10 +11,10 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:MarisaItem"
+      "value": "CUSTOM:MarisaHatItem"
     },
     "smeltingReturnStack": {
-      "value": "CUSTOM:MarisaHatItem"
+      "value": "CUSTOM:MarisaItem"
     },
     "name": "marisa_no_hat_craft",
     "namespace": "mod"

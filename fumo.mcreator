@@ -1034,6 +1034,66 @@
         ]
       },
       "path": "~/Base"
+    },
+    {
+      "name": "InstantRotate",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instant_rotate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/InstantRotateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Base"
+    },
+    {
+      "name": "KoishiRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koishi_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/koishi_recipe.json"
+        ]
+      },
+      "path": "~/Koishi"
+    },
+    {
+      "name": "FlandreRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flandre_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/flandre_recipe.json"
+        ]
+      },
+      "path": "~/Flandre"
     }
   ],
   "variable_elements": [],
@@ -1134,13 +1194,14 @@
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo Forge",
-    "version": "7.0.0",
+    "version": "7.1.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "eiki",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

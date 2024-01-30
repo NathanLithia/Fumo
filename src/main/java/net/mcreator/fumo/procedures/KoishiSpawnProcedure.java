@@ -1,15 +1,17 @@
 package net.mcreator.fumo.procedures;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.fumo.init.FumoModItems;
-import net.mcreator.fumo.init.FumoModEntities;
 
 public class KoishiSpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -19,13 +21,8 @@ public class KoishiSpawnProcedure {
 			ItemStack _stktoremove = new ItemStack(FumoModItems.KOISHI_ITEM.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = FumoModEntities.KOISHI.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
-			if (entityToSpawn != null) {
-				entityToSpawn.setYRot((float) (entity.getYRot() - 180));
-				entityToSpawn.setYBodyRot((float) (entity.getYRot() - 180));
-				entityToSpawn.setYHeadRot((float) (entity.getYRot() - 180));
-			}
-		}
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 1), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					("/summon fumo:koishi ~ ~ ~ " + "{Rotation:[" + (entity.getYRot() - 180) + "f]}"));
 	}
 }
