@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="fumo"
+version="7.0.0"
+displayName="Fumo Forge"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://modrinth.com/mod/fumo"
+authors="VegaKey"
+description="Adds Fumos from Touhou."
+
+[[dependencies.fumo]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
