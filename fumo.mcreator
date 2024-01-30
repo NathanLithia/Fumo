@@ -1288,6 +1288,86 @@
         ]
       },
       "path": "~/BootlegReimu"
+    },
+    {
+      "name": "Meiling",
+      "type": "livingentity",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meiling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/entity/MeilingEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/MeilingRenderer.java"
+        ]
+      },
+      "path": "~/Meiling"
+    },
+    {
+      "name": "MeilingItem",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meiling_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fumo/models/item/meiling_item.json",
+          "src/main/java/net/mcreator/fumo/item/MeilingItemItem.java"
+        ]
+      },
+      "path": "~/Meiling"
+    },
+    {
+      "name": "MeilingSpawn",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meiling_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/MeilingSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meiling"
+    },
+    {
+      "name": "MeilingAdvancement",
+      "type": "achievement",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meiling_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/meiling_advancement.json"
+        ]
+      },
+      "path": "~/Meiling"
     }
   ],
   "variable_elements": [],
@@ -1318,9 +1398,11 @@
       "item.fumo.tan_cirno_item": "Tan Cirno",
       "entity.fumo.reimu": "Bootleg Reimu Hakurei",
       "entity.fumo.cirno": "Cirno",
+      "item.fumo.meiling_item": "Meiling",
       "entity.fumo.debug_fumo": "Debug Fumo",
       "entity.fumo.blue_reimu": "Reimu Hakurei",
       "advancements.blue_reimu_advancement.descr": "Obtained Blue Reimu",
+      "advancements.meiling_advancement.title": "Meiling",
       "item_group.fumo.fumo_tab": "Fumo",
       "advancements.koishi_advancement.descr": "Obtained Koishi",
       "advancements.bootleg_fumo_advancement.title": "Bootleg",
@@ -1330,6 +1412,7 @@
       "advancements.chen_advancement.descr": "Obtained Chen",
       "advancements.cirno_advancement.title": "Cirno",
       "advancements.reimu_advancement.descr": "Craft Reimu",
+      "entity.fumo.meiling": "Meiling",
       "advancements.flande_advancement.descr": "Obtained Flandre",
       "subtitles.fumo_scream": "Fumo",
       "advancements.fumo_advancement.title": "Fumo",
@@ -1337,6 +1420,7 @@
       "advancements.cirno_advancement.descr": "Craft a Cirno",
       "item.fumo.new_reimu_item": "Reimu Hakurei",
       "advancements.eiki_advancement.title": "Eiki Advancement",
+      "advancements.meiling_advancement.descr": "Obtained Meiling!",
       "advancements.blue_reimu_advancement.title": "Blue Reimu",
       "advancements.bootleg_fumo_advancement.descr": "Obtain your fumo\u0027s from alternate sources",
       "item.fumo.flandre_item": "Flandre Scarlet",
@@ -1408,13 +1492,17 @@
       {
         "name": "Flandre",
         "children": []
+      },
+      {
+        "name": "Meiling",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo Forge",
-    "version": "7.1.0",
+    "version": "8.0.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",

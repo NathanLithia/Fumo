@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.mcreator.fumo.item.TanCirnoItemItem;
 import net.mcreator.fumo.item.ReimuItemItem;
 import net.mcreator.fumo.item.NewReimuItemItem;
+import net.mcreator.fumo.item.MeilingItemItem;
 import net.mcreator.fumo.item.MarisaItemItem;
 import net.mcreator.fumo.item.MarisaHatItemItem;
 import net.mcreator.fumo.item.KoishiItemItem;
@@ -40,4 +41,5 @@ public class FumoModItems {
 	public static final RegistryObject<Item> KOISHI_ITEM = REGISTRY.register("koishi_item", () -> new KoishiItemItem());
 	public static final RegistryObject<Item> FLANDRE_ITEM = REGISTRY.register("flandre_item", () -> new FlandreItemItem());
 	public static final RegistryObject<Item> CREATIVE_TAB_ICON = REGISTRY.register("creative_tab_icon", () -> new CreativeTabIconItem());
+	public static final RegistryObject<Item> MEILING_ITEM = REGISTRY.register("meiling_item", () -> new MeilingItemItem());
 }

@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.fumo.entity.TanCirnoEntity;
 import net.mcreator.fumo.entity.ReimuEntity;
 import net.mcreator.fumo.entity.NewReimuEntity;
+import net.mcreator.fumo.entity.MeilingEntity;
 import net.mcreator.fumo.entity.MarisaHatEntity;
 import net.mcreator.fumo.entity.MarisaEntity;
 import net.mcreator.fumo.entity.KoishiEntity;
@@ -57,6 +58,8 @@ public class FumoModEntities {
 			EntityType.Builder.<KoishiEntity>of(KoishiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KoishiEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<FlandreEntity>> FLANDRE = register("flandre",
 			EntityType.Builder.<FlandreEntity>of(FlandreEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlandreEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<MeilingEntity>> MEILING = register("meiling",
+			EntityType.Builder.<MeilingEntity>of(MeilingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MeilingEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -77,6 +80,7 @@ public class FumoModEntities {
 			BlueReimuEntity.init();
 			KoishiEntity.init();
 			FlandreEntity.init();
+			MeilingEntity.init();
 		});
 	}
 
@@ -94,5 +98,6 @@ public class FumoModEntities {
 		event.put(BLUE_REIMU.get(), BlueReimuEntity.createAttributes().build());
 		event.put(KOISHI.get(), KoishiEntity.createAttributes().build());
 		event.put(FLANDRE.get(), FlandreEntity.createAttributes().build());
+		event.put(MEILING.get(), MeilingEntity.createAttributes().build());
 	}
 }

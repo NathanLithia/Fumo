@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.fumo.client.renderer.TanCirnoRenderer;
 import net.mcreator.fumo.client.renderer.ReimuRenderer;
 import net.mcreator.fumo.client.renderer.NewReimuRenderer;
+import net.mcreator.fumo.client.renderer.MeilingRenderer;
 import net.mcreator.fumo.client.renderer.MarisaRenderer;
 import net.mcreator.fumo.client.renderer.MarisaHatRenderer;
 import net.mcreator.fumo.client.renderer.KoishiRenderer;
@@ -38,5 +39,6 @@ public class FumoModEntityRenderers {
 		event.registerEntityRenderer(FumoModEntities.BLUE_REIMU.get(), BlueReimuRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.KOISHI.get(), KoishiRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.FLANDRE.get(), FlandreRenderer::new);
+		event.registerEntityRenderer(FumoModEntities.MEILING.get(), MeilingRenderer::new);
 	}
 }

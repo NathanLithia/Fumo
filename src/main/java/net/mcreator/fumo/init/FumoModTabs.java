@@ -30,5 +30,6 @@ public class FumoModTabs {
 				tabData.accept(FumoModItems.BLUE_REIMU_ITEM.get());
 				tabData.accept(FumoModItems.KOISHI_ITEM.get());
 				tabData.accept(FumoModItems.FLANDRE_ITEM.get());
+				tabData.accept(FumoModItems.MEILING_ITEM.get());
 			}).withSearchBar().build());
 }
