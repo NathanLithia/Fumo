@@ -1,4 +1,4 @@
-// Made with Blockbench 4.7.4
+// Made with Blockbench 4.9.3
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -32,7 +32,7 @@ public class ModelFumo<T extends Entity> extends EntityModel<T> {
 		PartDefinition LeftLegOver_r1 = LeftLeg.addOrReplaceChild("LeftLegOver_r1",
 				CubeListBuilder.create().texOffs(34, 3)
 						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.1F)).texOffs(42, 39)
-						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.1F)),
+						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.01F)),
 				PartPose.offsetAndRotation(8.0F, 0.0F, -8.0F, 0.0F, -0.3927F, 0.0F));
 
 		PartDefinition RightLeg = Fumo.addOrReplaceChild("RightLeg", CubeListBuilder.create(),
@@ -41,7 +41,7 @@ public class ModelFumo<T extends Entity> extends EntityModel<T> {
 		PartDefinition RightLegOver_r1 = RightLeg.addOrReplaceChild("RightLegOver_r1",
 				CubeListBuilder.create().texOffs(25, 0)
 						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.1F)).texOffs(33, 22)
-						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)),
+						.addBox(-1.0F, -1.0F, 1.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.01F)),
 				PartPose.offsetAndRotation(8.0F, 0.0F, -8.0F, 0.0F, 0.3927F, 0.0F));
 
 		PartDefinition Skirt = Fumo.addOrReplaceChild("Skirt",
@@ -78,12 +78,14 @@ public class ModelFumo<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
+
+	}
+
+	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay,
 			float red, float green, float blue, float alpha) {
 		Fumo.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-	}
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-			float headPitch) {
 	}
 }

@@ -10,6 +10,8 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.fumo.item.YuyukoItemItem;
+import net.mcreator.fumo.item.YuyukoIconItem;
 import net.mcreator.fumo.item.YoumuItemItem;
 import net.mcreator.fumo.item.YoumuIconItem;
 import net.mcreator.fumo.item.TanCirnoItemItem;
@@ -74,4 +76,6 @@ public class FumoModItems {
 	public static final RegistryObject<Item> BLUE_REIMU_ICON = REGISTRY.register("blue_reimu_icon", () -> new BlueReimuIconItem());
 	public static final RegistryObject<Item> FUMO_ROTATE_ICON = REGISTRY.register("fumo_rotate_icon", () -> new FumoRotateIconItem());
 	public static final RegistryObject<Item> ITEM_SPIN_ICON = REGISTRY.register("item_spin_icon", () -> new ItemSpinIconItem());
+	public static final RegistryObject<Item> YUYUKO_ITEM = REGISTRY.register("yuyuko_item", () -> new YuyukoItemItem());
+	public static final RegistryObject<Item> YUYUKO_ICON = REGISTRY.register("yuyuko_icon", () -> new YuyukoIconItem());
 }

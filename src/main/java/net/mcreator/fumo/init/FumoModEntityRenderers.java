@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.fumo.client.renderer.YuyukoRenderer;
 import net.mcreator.fumo.client.renderer.YoumuRenderer;
 import net.mcreator.fumo.client.renderer.TanCirnoRenderer;
 import net.mcreator.fumo.client.renderer.ReimuRenderer;
@@ -42,5 +43,6 @@ public class FumoModEntityRenderers {
 		event.registerEntityRenderer(FumoModEntities.FLANDRE.get(), FlandreRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.MEILING.get(), MeilingRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.YOUMU.get(), YoumuRenderer::new);
+		event.registerEntityRenderer(FumoModEntities.YUYUKO.get(), YuyukoRenderer::new);
 	}
 }

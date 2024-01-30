@@ -1757,6 +1757,115 @@
         ]
       },
       "path": "~/Base/Icons"
+    },
+    {
+      "name": "Yuyuko",
+      "type": "livingentity",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/client/renderer/YuyukoRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/YuyukoEntity.java"
+        ]
+      },
+      "path": "~/Yuyuko"
+    },
+    {
+      "name": "YuyukoItem",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fumo/models/item/yuyuko_item.json",
+          "src/main/java/net/mcreator/fumo/item/YuyukoItemItem.java"
+        ]
+      },
+      "path": "~/Yuyuko"
+    },
+    {
+      "name": "YuyukoSpawn",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/YuyukoSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Yuyuko"
+    },
+    {
+      "name": "YuyukoAdvancement",
+      "type": "achievement",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/yuyuko_advancement.json"
+        ]
+      },
+      "path": "~/Yuyuko"
+    },
+    {
+      "name": "YuyukoCraft",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/yuyuko_craft.json"
+        ]
+      },
+      "path": "~/Yuyuko"
+    },
+    {
+      "name": "YuyukoIcon",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yuyuko_icon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fumo/models/item/yuyuko_icon.json",
+          "src/main/java/net/mcreator/fumo/item/YuyukoIconItem.java"
+        ]
+      },
+      "path": "~/Base/Icons"
     }
   ],
   "variable_elements": [],
@@ -1773,6 +1882,7 @@
   "language_map": {
     "en_us": {
       "advancements.tan_cirno_achievement.descr": "Strike Cirno with Lightning",
+      "item.fumo.yuyuko_icon": "Icon",
       "advancements.boot_leg_reimu_advancement.title": "Bootleg Reimu",
       "item.fumo.youmu_item": "Youmu",
       "item.fumo.creative_tab_icon": "Creative Tab Icon",
@@ -1789,6 +1899,7 @@
       "advancements.marisa_hat_advancement.descr": "Obtain Marisa",
       "item.fumo.tan_cirno_item": "Tan Cirno",
       "entity.fumo.reimu": "Bootleg Reimu Hakurei",
+      "entity.fumo.yuyuko": "Yuyuko",
       "entity.fumo.cirno": "Cirno",
       "item.fumo.meiling_item": "Meiling",
       "item.fumo.koishi_icon": "Icon",
@@ -1822,10 +1933,12 @@
       "item.fumo.koishi_item": "Koishi Komeiji",
       "advancements.cirno_advancement.descr": "Obtain Cirno",
       "item.fumo.new_reimu_item": "Reimu Hakurei",
+      "advancements.yuyuko_advancement.title": "Yuyuko",
       "advancements.eiki_advancement.title": "Eiki",
       "advancements.meiling_advancement.descr": "Obtain Meiling",
       "advancements.blue_reimu_advancement.title": "Blue Reimu",
       "advancements.bootleg_fumo_advancement.descr": "Obtain questionable fumo\u0027s from wandering traders",
+      "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
       "advancements.youmu_advancement.descr": "Obtain Youmu",
       "item.fumo.flandre_item": "Flandre Scarlet",
       "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
@@ -1846,6 +1959,7 @@
       "advancements.fumo_tutorial_base_advancement.descr": "Fumo Mechanics",
       "item.fumo.flan_icon": "Icon",
       "advancements.koishi_advancement.title": "Koishi",
+      "item.fumo.yuyuko_item": "Yuyuko",
       "entity.fumo.flandre": "Flandre Scarlet",
       "advancements.fumo_advancement.descr": "Begin your fumo adventure",
       "item.fumo.youmu_icon": "Icon",
@@ -1921,13 +2035,17 @@
       {
         "name": "Youmu",
         "children": []
+      },
+      {
+        "name": "Yuyuko",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "9.1.2",
+    "version": "10.0.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
