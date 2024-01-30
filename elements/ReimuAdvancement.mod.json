@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Reimu Advancement",
-    "achievementDescription": "Craft Reimu",
+    "achievementName": "Reimu",
+    "achievementDescription": "Obtain Reimu",
     "achievementIcon": {
-      "value": "CUSTOM:NewReimuItem"
+      "value": "CUSTOM:ReimuIcon"
     },
     "background": "Default",
     "disableDisplay": false,

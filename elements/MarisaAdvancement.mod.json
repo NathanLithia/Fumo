@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Marisa with no hat!",
-    "achievementDescription": "Marisa in the oven",
+    "achievementName": "Hatless Marisa",
+    "achievementDescription": "Obtain Hatless Marisa by cooking her in a furnace.",
     "achievementIcon": {
-      "value": "CUSTOM:MarisaItem"
+      "value": "CUSTOM:MarisaIcon"
     },
     "background": "Default",
     "disableDisplay": false,

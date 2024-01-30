@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Chen Advancement",
-    "achievementDescription": "Obtained Chen",
+    "achievementName": "Chen",
+    "achievementDescription": "Obtain Chen",
     "achievementIcon": {
-      "value": "CUSTOM:ChenItem"
+      "value": "CUSTOM:ChenIcon"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:cirno_item"
+      "item": "fumo:cirno_icon"
     },
     "title": {
       "translate": "advancements.cirno_advancement.title"

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "eikiicon",
+    "texture": "fumotabiconanimated",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -35,7 +35,7 @@
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.DEBUG_STICK"
     },
     "isMeat": false,
     "isAlwaysEdible": true,

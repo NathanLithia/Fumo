@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:new_reimu_item"
+      "item": "fumo:reimu_icon"
     },
     "title": {
       "translate": "advancements.reimu_advancement.title"

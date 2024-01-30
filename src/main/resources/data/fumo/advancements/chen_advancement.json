@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:chen_item"
+      "item": "fumo:chen_icon"
     },
     "title": {
       "translate": "advancements.chen_advancement.title"

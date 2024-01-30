@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:youmu_item"
+      "item": "fumo:youmu_icon"
     },
     "title": {
       "translate": "advancements.youmu_advancement.title"

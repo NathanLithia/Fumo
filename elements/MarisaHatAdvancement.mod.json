@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Marisa & Her hat",
-    "achievementDescription": "Crafted Marisa",
+    "achievementName": "Marisa",
+    "achievementDescription": "Obtain Marisa",
     "achievementIcon": {
-      "value": "CUSTOM:MarisaHatItem"
+      "value": "CUSTOM:MarisaHatIcon"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Meiling",
-    "achievementDescription": "Obtained Meiling!",
+    "achievementDescription": "Obtain Meiling",
     "achievementIcon": {
-      "value": "CUSTOM:MeilingItem"
+      "value": "CUSTOM:MeilingIcon"
     },
     "background": "Default",
     "disableDisplay": false,

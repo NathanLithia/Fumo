@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Koishi Advancement",
-    "achievementDescription": "Obtained Koishi",
+    "achievementName": "Koishi",
+    "achievementDescription": "Obtain Koishi",
     "achievementIcon": {
-      "value": "CUSTOM:KoishiItem"
+      "value": "CUSTOM:KoishiIcon"
     },
     "background": "Default",
     "disableDisplay": false,

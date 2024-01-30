@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Boot Leg Reimu Advancement",
-    "achievementDescription": "Bootleg Reimu Obtained",
+    "achievementName": "Bootleg Reimu",
+    "achievementDescription": "Obtain Bootleg Reimu!",
     "achievementIcon": {
-      "value": "CUSTOM:ReimuItem"
+      "value": "CUSTOM:BootlegReimuIcon"
     },
     "background": "Default",
     "disableDisplay": false,

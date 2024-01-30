@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:koishi_item"
+      "item": "fumo:koishi_icon"
     },
     "title": {
       "translate": "advancements.koishi_advancement.title"

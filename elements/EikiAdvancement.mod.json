@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Eiki Advancement",
-    "achievementDescription": "Obtained Eiki",
+    "achievementName": "Eiki",
+    "achievementDescription": "Obtain Eiki",
     "achievementIcon": {
-      "value": "CUSTOM:EikiItem"
+      "value": "CUSTOM:EikiIcon"
     },
     "background": "Default",
     "disableDisplay": false,

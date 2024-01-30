@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:marisa_item"
+      "item": "fumo:marisa_icon"
     },
     "title": {
       "translate": "advancements.marisa_advancement.title"

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Tan Cirno",
-    "achievementDescription": "Give Cirno an electrifying tan.",
+    "achievementDescription": "Strike Cirno with Lightning",
     "achievementIcon": {
-      "value": "CUSTOM:TanCirnoItem"
+      "value": "CUSTOM:TanCirnoIcon"
     },
     "background": "Default",
     "disableDisplay": false,

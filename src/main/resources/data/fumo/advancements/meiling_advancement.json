@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:meiling_item"
+      "item": "fumo:meiling_icon"
     },
     "title": {
       "translate": "advancements.meiling_advancement.title"

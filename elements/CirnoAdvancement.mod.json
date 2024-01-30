@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Cirno",
-    "achievementDescription": "Craft a Cirno",
+    "achievementDescription": "Obtain Cirno",
     "achievementIcon": {
-      "value": "CUSTOM:CirnoItem"
+      "value": "CUSTOM:CirnoIcon"
     },
     "background": "Default",
     "disableDisplay": false,

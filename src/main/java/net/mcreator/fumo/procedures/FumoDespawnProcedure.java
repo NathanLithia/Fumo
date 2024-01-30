@@ -11,9 +11,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.fumo.FumoMod;
 
@@ -23,6 +26,14 @@ public class FumoDespawnProcedure {
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ROTTEN_FLESH
 				|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.POISONOUS_POTATO) {
+			if (sourceentity instanceof ServerPlayer _player) {
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fumo:tutorial_advancement_pickup"));
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
+				}
+			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.eat")), SoundSource.NEUTRAL, 1, 1);

@@ -3,14 +3,14 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Blue Reimu",
-    "achievementDescription": "Obtained Blue Reimu",
+    "achievementDescription": "Obtain Blue Reimu with blue dye",
     "achievementIcon": {
-      "value": "CUSTOM:BlueReimuItem"
+      "value": "CUSTOM:BlueReimuIcon"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": true,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],

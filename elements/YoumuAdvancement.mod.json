@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Youmu",
-    "achievementDescription": "Obtained Youmu!",
+    "achievementDescription": "Obtain Youmu",
     "achievementIcon": {
-      "value": "CUSTOM:YoumuItem"
+      "value": "CUSTOM:YoumuIcon"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fumo:item/eikiicon"
+    "layer0": "fumo:item/fumotabiconanimated"
   }
 }

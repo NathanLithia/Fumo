@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:tan_cirno_item"
+      "item": "fumo:tan_cirno_icon"
     },
     "title": {
       "translate": "advancements.tan_cirno_achievement.title"

@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Flande Advancement",
-    "achievementDescription": "Obtained Flandre",
+    "achievementName": "Flandre",
+    "achievementDescription": "Obtain Flandre",
     "achievementIcon": {
-      "value": "CUSTOM:FlandreItem"
+      "value": "CUSTOM:FlanIcon"
     },
     "background": "Default",
     "disableDisplay": false,

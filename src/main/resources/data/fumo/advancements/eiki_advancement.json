@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "fumo:eiki_item"
+      "item": "fumo:eiki_icon"
     },
     "title": {
       "translate": "advancements.eiki_advancement.title"
