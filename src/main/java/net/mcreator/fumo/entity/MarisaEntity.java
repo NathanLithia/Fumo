@@ -4,8 +4,11 @@ package net.mcreator.fumo.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.ForgeMod;
 
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -13,7 +16,10 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -27,6 +33,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -50,11 +57,49 @@ public class MarisaEntity extends Animal {
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
+		this.setPathfindingMalus(BlockPathTypes.WATER, 0);
+		this.moveControl = new MoveControl(this) {
+			@Override
+			public void tick() {
+				if (MarisaEntity.this.isInWater())
+					MarisaEntity.this.setDeltaMovement(MarisaEntity.this.getDeltaMovement().add(0, 0.005, 0));
+				if (this.operation == MoveControl.Operation.MOVE_TO && !MarisaEntity.this.getNavigation().isDone()) {
+					double dx = this.wantedX - MarisaEntity.this.getX();
+					double dy = this.wantedY - MarisaEntity.this.getY();
+					double dz = this.wantedZ - MarisaEntity.this.getZ();
+					float f = (float) (Mth.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
+					float f1 = (float) (this.speedModifier * MarisaEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+					MarisaEntity.this.setYRot(this.rotlerp(MarisaEntity.this.getYRot(), f, 10));
+					MarisaEntity.this.yBodyRot = MarisaEntity.this.getYRot();
+					MarisaEntity.this.yHeadRot = MarisaEntity.this.getYRot();
+					if (MarisaEntity.this.isInWater()) {
+						MarisaEntity.this.setSpeed((float) MarisaEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+						float f2 = -(float) (Mth.atan2(dy, (float) Math.sqrt(dx * dx + dz * dz)) * (180 / Math.PI));
+						f2 = Mth.clamp(Mth.wrapDegrees(f2), -85, 85);
+						MarisaEntity.this.setXRot(this.rotlerp(MarisaEntity.this.getXRot(), f2, 5));
+						float f3 = Mth.cos(MarisaEntity.this.getXRot() * (float) (Math.PI / 180.0));
+						MarisaEntity.this.setZza(f3 * f1);
+						MarisaEntity.this.setYya((float) (f1 * dy));
+					} else {
+						MarisaEntity.this.setSpeed(f1 * 0.05F);
+					}
+				} else {
+					MarisaEntity.this.setSpeed(0);
+					MarisaEntity.this.setYya(0);
+					MarisaEntity.this.setZza(0);
+				}
+			}
+		};
 	}
 
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
+	}
+
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new WaterBoundPathNavigation(this, world);
 	}
 
 	@Override
@@ -144,16 +189,18 @@ public class MarisaEntity extends Animal {
 	}
 
 	@Override
-	public boolean isPushable() {
+	public boolean canBreatheUnderwater() {
+		return true;
+	}
+
+	@Override
+	public boolean checkSpawnObstruction(LevelReader world) {
+		return world.isUnobstructed(this);
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
 		return false;
-	}
-
-	@Override
-	protected void doPush(Entity entityIn) {
-	}
-
-	@Override
-	protected void pushEntities() {
 	}
 
 	public static void init() {
@@ -166,6 +213,7 @@ public class MarisaEntity extends Animal {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.3);
 		return builder;
 	}
 }

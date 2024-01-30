@@ -202,19 +202,6 @@ public class ChenEntity extends Animal {
 		return false;
 	}
 
-	@Override
-	public boolean isPushable() {
-		return false;
-	}
-
-	@Override
-	protected void doPush(Entity entityIn) {
-	}
-
-	@Override
-	protected void pushEntities() {
-	}
-
 	public static void init() {
 	}
 

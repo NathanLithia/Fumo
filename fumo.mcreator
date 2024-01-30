@@ -1926,8 +1926,8 @@
   },
   "workspaceSettings": {
     "modid": "fumo",
-    "modName": "Fumo Forge",
-    "version": "9.1.0",
+    "modName": "Fumo",
+    "version": "9.1.2",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
