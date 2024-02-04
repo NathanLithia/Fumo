@@ -13,6 +13,7 @@ import net.mcreator.fumo.client.renderer.YuyukoRenderer;
 import net.mcreator.fumo.client.renderer.YoumuRenderer;
 import net.mcreator.fumo.client.renderer.TanCirnoRenderer;
 import net.mcreator.fumo.client.renderer.ReimuRenderer;
+import net.mcreator.fumo.client.renderer.PatchouliRenderer;
 import net.mcreator.fumo.client.renderer.NewReimuRenderer;
 import net.mcreator.fumo.client.renderer.MeilingRenderer;
 import net.mcreator.fumo.client.renderer.MarisaRenderer;
@@ -44,5 +45,6 @@ public class FumoModEntityRenderers {
 		event.registerEntityRenderer(FumoModEntities.MEILING.get(), MeilingRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.YOUMU.get(), YoumuRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.YUYUKO.get(), YuyukoRenderer::new);
+		event.registerEntityRenderer(FumoModEntities.PATCHOULI.get(), PatchouliRenderer::new);
 	}
 }

@@ -1866,6 +1866,100 @@
         ]
       },
       "path": "~/Base/Icons"
+    },
+    {
+      "name": "Patchouli",
+      "type": "livingentity",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patchouli",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/client/renderer/PatchouliRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/PatchouliEntity.java"
+        ]
+      },
+      "path": "~/Patchouli"
+    },
+    {
+      "name": "PatchouliItem",
+      "type": "item",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patchouli_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/item/PatchouliItemItem.java",
+          "src/main/resources/assets/fumo/models/item/patchouli_item.json"
+        ]
+      },
+      "path": "~/Patchouli"
+    },
+    {
+      "name": "PatchouliSpawn",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patchouli_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/PatchouliSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Patchouli"
+    },
+    {
+      "name": "PatchouliAdvancement",
+      "type": "achievement",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patchouli_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/patchouli_advancement.json"
+        ]
+      },
+      "path": "~/Patchouli"
+    },
+    {
+      "name": "PatchouliCraft",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "patchouli_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/patchouli_craft.json"
+        ]
+      },
+      "path": "~/Patchouli"
     }
   ],
   "variable_elements": [],
@@ -1886,6 +1980,7 @@
       "advancements.boot_leg_reimu_advancement.title": "Bootleg Reimu",
       "item.fumo.youmu_item": "Youmu",
       "item.fumo.creative_tab_icon": "Creative Tab Icon",
+      "advancements.patchouli_advancement.title": "Patchouli",
       "item.fumo.cirno_icon": "Icon",
       "item.fumo.marisa_hat_icon": "Icon",
       "item.fumo.fumoitem": "Debug Fumo",
@@ -1940,6 +2035,7 @@
       "advancements.bootleg_fumo_advancement.descr": "Obtain questionable fumo\u0027s from wandering traders",
       "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
       "advancements.youmu_advancement.descr": "Obtain Youmu",
+      "item.fumo.patchouli_item": "Patchouli",
       "item.fumo.flandre_item": "Flandre Scarlet",
       "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
       "advancements.eiki_advancement.descr": "Obtain Eiki",
@@ -1958,8 +2054,10 @@
       "entity.fumo.youmu": "Youmu",
       "advancements.fumo_tutorial_base_advancement.descr": "Fumo Mechanics",
       "item.fumo.flan_icon": "Icon",
+      "advancements.patchouli_advancement.descr": "Obtain Patchouli",
       "advancements.koishi_advancement.title": "Koishi",
       "item.fumo.yuyuko_item": "Yuyuko",
+      "entity.fumo.patchouli": "Patchouli",
       "entity.fumo.flandre": "Flandre Scarlet",
       "advancements.fumo_advancement.descr": "Begin your fumo adventure",
       "item.fumo.youmu_icon": "Icon",
@@ -2039,13 +2137,17 @@
       {
         "name": "Yuyuko",
         "children": []
+      },
+      {
+        "name": "Patchouli",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "10.0.0",
+    "version": "11.0.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",

@@ -33,5 +33,6 @@ public class FumoModTabs {
 				tabData.accept(FumoModItems.MEILING_ITEM.get());
 				tabData.accept(FumoModItems.YOUMU_ITEM.get());
 				tabData.accept(FumoModItems.YUYUKO_ITEM.get());
+				tabData.accept(FumoModItems.PATCHOULI_ITEM.get());
 			}).withSearchBar().build());
 }

@@ -20,6 +20,7 @@ import net.mcreator.fumo.entity.YuyukoEntity;
 import net.mcreator.fumo.entity.YoumuEntity;
 import net.mcreator.fumo.entity.TanCirnoEntity;
 import net.mcreator.fumo.entity.ReimuEntity;
+import net.mcreator.fumo.entity.PatchouliEntity;
 import net.mcreator.fumo.entity.NewReimuEntity;
 import net.mcreator.fumo.entity.MeilingEntity;
 import net.mcreator.fumo.entity.MarisaHatEntity;
@@ -66,6 +67,8 @@ public class FumoModEntities {
 			EntityType.Builder.<YoumuEntity>of(YoumuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YoumuEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<YuyukoEntity>> YUYUKO = register("yuyuko",
 			EntityType.Builder.<YuyukoEntity>of(YuyukoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YuyukoEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<PatchouliEntity>> PATCHOULI = register("patchouli",
+			EntityType.Builder.<PatchouliEntity>of(PatchouliEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PatchouliEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -89,6 +92,7 @@ public class FumoModEntities {
 			MeilingEntity.init();
 			YoumuEntity.init();
 			YuyukoEntity.init();
+			PatchouliEntity.init();
 		});
 	}
 
@@ -109,5 +113,6 @@ public class FumoModEntities {
 		event.put(MEILING.get(), MeilingEntity.createAttributes().build());
 		event.put(YOUMU.get(), YoumuEntity.createAttributes().build());
 		event.put(YUYUKO.get(), YuyukoEntity.createAttributes().build());
+		event.put(PATCHOULI.get(), PatchouliEntity.createAttributes().build());
 	}
 }
