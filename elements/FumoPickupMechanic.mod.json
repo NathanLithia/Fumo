@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fumo Food Poisioning",
-    "achievementDescription": "Use some Rotten Flesh or a Poisionous Potato to pick up a Fumo.",
+    "achievementName": "Fumo Pickup",
+    "achievementDescription": "Pick up a fumo by interacting while sneaking",
     "achievementIcon": {
-      "value": "Items.ROTTEN_FLESH"
+      "value": "CUSTOM:ItemSpinIcon"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:FumoTutorialBaseAdvancement"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"44\" y=\"47\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"100\" y=\"141\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

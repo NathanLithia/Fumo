@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:rotten_flesh"
+      "item": "fumo:item_spin_icon"
     },
     "title": {
-      "translate": "advancements.tutorial_advancement_pickup.title"
+      "translate": "advancements.fumo_pickup_mechanic.title"
     },
     "description": {
-      "translate": "advancements.tutorial_advancement_pickup.descr"
+      "translate": "advancements.fumo_pickup_mechanic.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "tutorial_advancement_pickup": {
+    "fumo_pickup_mechanic": {
       "trigger": "minecraft:impossible"
     }
   },

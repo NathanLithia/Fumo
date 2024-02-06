@@ -1960,6 +1960,20 @@
         ]
       },
       "path": "~/Patchouli"
+    },
+    {
+      "name": "FumoPickupMechanic",
+      "type": "achievement",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumo_pickup_mechanic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/fumo_pickup_mechanic.json"
+        ]
+      },
+      "path": "~/Base"
     }
   ],
   "variable_elements": [],
@@ -1989,6 +2003,7 @@
       "item.fumo.chen_item": "Chen",
       "advancements.tan_cirno_achievement.title": "Tan Cirno",
       "item.fumo.eiki_item": "Eiki Shiki",
+      "advancements.fumo_pickup_mechanic.title": "Fumo Pickup",
       "item.fumo.marisa_hat_item": "Marisa Kirisame",
       "entity.fumo.new_reimu": "Reimu Hakurei",
       "advancements.marisa_hat_advancement.descr": "Obtain Marisa",
@@ -1998,6 +2013,7 @@
       "entity.fumo.cirno": "Cirno",
       "item.fumo.meiling_item": "Meiling",
       "item.fumo.koishi_icon": "Icon",
+      "advancements.fumo_pickup_mechanic.descr": "Pick up a fumo by interacting while sneaking",
       "entity.fumo.debug_fumo": "Debug Fumo",
       "entity.fumo.blue_reimu": "Reimu Hakurei",
       "advancements.youmu_advancement.title": "Youmu",
@@ -2023,7 +2039,7 @@
       "advancements.flande_advancement.descr": "Obtain Flandre",
       "subtitles.fumo_scream": "Fumo",
       "advancements.fumo_advancement.title": "Fumo",
-      "advancements.tutorial_advancement_pickup.title": "Re-Obtain a Fumo!",
+      "advancements.tutorial_advancement_pickup.title": "Fumo Food Poisioning",
       "advancements.fumo_feed_advancement.title": "Fumo Food.",
       "item.fumo.koishi_item": "Koishi Komeiji",
       "advancements.cirno_advancement.descr": "Obtain Cirno",
@@ -2147,7 +2163,7 @@
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "11.0.0",
+    "version": "11.0.1",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
