@@ -1,7 +1,6 @@
 package net.mcreator.fumo.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.ModList;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -26,35 +25,26 @@ public class FumoDespawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getPersistentData().getDouble("QueuedDespawnState") == 0) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem() && sourceentity.isShiftKeyDown()) {
-				if (ModList.get().isLoaded("carryon")) {
-					if (sourceentity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fumo:fumo_pickup_mechanic"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-				} else {
-					entity.getPersistentData().putDouble("QueuedDespawnState", 1);
-					if (sourceentity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fumo:fumo_pickup_mechanic"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 1);
-					if (!entity.level().isClientSide())
-						entity.discard();
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem() && sourceentity.isShiftKeyDown()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth(1);
+			if (sourceentity instanceof ServerPlayer _player) {
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fumo:fumo_pickup_mechanic"));
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
 				}
-			} else {
+			}
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 1);
+			if (!entity.level().isClientSide())
+				entity.discard();
+		} else {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != 1) {
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ROTTEN_FLESH
 						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.POISONOUS_POTATO) {
-					entity.getPersistentData().putDouble("QueuedDespawnState", 1);
+					if (entity instanceof LivingEntity _entity)
+						_entity.setHealth(1);
 					if (sourceentity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fumo:tutorial_advancement_pickup"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -83,8 +73,8 @@ public class FumoDespawnProcedure {
 							entity.discard();
 					});
 				}
-				FumoRotateProcedure.execute(entity, sourceentity);
 			}
 		}
+		FumoRotateProcedure.execute(entity, sourceentity);
 	}
 }

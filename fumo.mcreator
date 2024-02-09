@@ -24,8 +24,8 @@
       "registry_name": "marisa",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/entity/MarisaEntity.java",
-          "src/main/java/net/mcreator/fumo/client/renderer/MarisaRenderer.java"
+          "src/main/java/net/mcreator/fumo/client/renderer/MarisaRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/MarisaEntity.java"
         ]
       },
       "path": "~/Marisa"
@@ -39,8 +39,8 @@
       "registry_name": "marisa_hat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/MarisaHatRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/MarisaHatEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/MarisaHatEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/MarisaHatRenderer.java"
         ]
       },
       "path": "~/Marisa Hat"
@@ -366,8 +366,8 @@
       "registry_name": "cirno",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/CirnoRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/CirnoEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/CirnoEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/CirnoRenderer.java"
         ]
       },
       "path": "~/Cirno"
@@ -468,8 +468,8 @@
       "registry_name": "tan_cirno",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/TanCirnoRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/TanCirnoEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/TanCirnoEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/TanCirnoRenderer.java"
         ]
       },
       "path": "~/TanCirno"
@@ -498,8 +498,8 @@
       "registry_name": "debug_fumo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/entity/DebugFumoEntity.java",
-          "src/main/java/net/mcreator/fumo/client/renderer/DebugFumoRenderer.java"
+          "src/main/java/net/mcreator/fumo/client/renderer/DebugFumoRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/DebugFumoEntity.java"
         ]
       },
       "path": "~/Base"
@@ -791,8 +791,8 @@
       "registry_name": "blue_reimu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/entity/BlueReimuEntity.java",
-          "src/main/java/net/mcreator/fumo/client/renderer/BlueReimuRenderer.java"
+          "src/main/java/net/mcreator/fumo/client/renderer/BlueReimuRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/BlueReimuEntity.java"
         ]
       },
       "path": "~/BlueReimu"
@@ -885,8 +885,8 @@
       "registry_name": "koishi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/entity/KoishiEntity.java",
-          "src/main/java/net/mcreator/fumo/client/renderer/KoishiRenderer.java"
+          "src/main/java/net/mcreator/fumo/client/renderer/KoishiRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/KoishiEntity.java"
         ]
       },
       "path": "~/Koishi"
@@ -951,8 +951,8 @@
       "registry_name": "flandre",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/entity/FlandreEntity.java",
-          "src/main/java/net/mcreator/fumo/client/renderer/FlandreRenderer.java"
+          "src/main/java/net/mcreator/fumo/client/renderer/FlandreRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/FlandreEntity.java"
         ]
       },
       "path": "~/Flandre"
@@ -1392,8 +1392,8 @@
       "registry_name": "youmu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/YoumuRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/YoumuEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/YoumuEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/YoumuRenderer.java"
         ]
       },
       "path": "~/Youmu"
@@ -1876,8 +1876,8 @@
       "registry_name": "patchouli",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/PatchouliRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/PatchouliEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/PatchouliEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/PatchouliRenderer.java"
         ]
       },
       "path": "~/Patchouli"
@@ -2163,7 +2163,7 @@
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "11.0.1",
+    "version": "11.0.2",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
