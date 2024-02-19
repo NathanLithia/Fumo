@@ -34,5 +34,6 @@ public class FumoModTabs {
 				tabData.accept(FumoModItems.YOUMU_ITEM.get());
 				tabData.accept(FumoModItems.YUYUKO_ITEM.get());
 				tabData.accept(FumoModItems.PATCHOULI_ITEM.get());
+				tabData.accept(FumoModItems.NITORI_ITEM.get());
 			}).withSearchBar().build());
 }
