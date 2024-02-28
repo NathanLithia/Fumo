@@ -2068,6 +2068,100 @@
         ]
       },
       "path": "~/Nitori"
+    },
+    {
+      "name": "Tewi",
+      "type": "livingentity",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tewi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/client/renderer/TewiRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/TewiEntity.java"
+        ]
+      },
+      "path": "~/Tewi"
+    },
+    {
+      "name": "TewiItem",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tewi_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fumo/models/item/tewi_item.json",
+          "src/main/java/net/mcreator/fumo/item/TewiItemItem.java"
+        ]
+      },
+      "path": "~/Tewi"
+    },
+    {
+      "name": "TewiSpawn",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tewi_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/TewiSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tewi"
+    },
+    {
+      "name": "TewiAdvancement",
+      "type": "achievement",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tewi_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/tewi_advancement.json"
+        ]
+      },
+      "path": "~/Tewi"
+    },
+    {
+      "name": "TewiCraft",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tewi_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/tewi_craft.json"
+        ]
+      },
+      "path": "~/Tewi"
     }
   ],
   "variable_elements": [],
@@ -2092,18 +2186,19 @@
       "advancements.fumo_pickup_mechanic.title": "Fumo Pickup",
       "item.fumo.tan_cirno_item": "Tan Cirno",
       "entity.fumo.yuyuko": "Yuyuko",
+      "advancements.tewi_advancement.descr": "Obtain Tewi",
       "entity.fumo.cirno": "Cirno",
       "item.fumo.koishi_icon": "Icon",
-      "entity.fumo.debug_fumo": "Debug Fumo",
       "advancements.youmu_advancement.title": "Youmu",
+      "entity.fumo.debug_fumo": "Debug Fumo",
       "advancements.blue_reimu_advancement.descr": "Obtain Blue Reimu with blue dye",
       "advancements.meiling_advancement.title": "Meiling",
       "advancements.koishi_advancement.descr": "Obtain Koishi",
       "item.fumo.eiki_icon": "Icon",
       "item.fumo.item_spin_icon": "Icon",
       "advancements.boot_leg_reimu_advancement.descr": "Obtain Bootleg Reimu!",
-      "advancements.chen_advancement.descr": "Obtain Chen",
       "item.fumo.chen_icon": "Icon",
+      "advancements.chen_advancement.descr": "Obtain Chen",
       "advancements.flande_advancement.descr": "Obtain Flandre",
       "subtitles.fumo_scream": "Fumo",
       "advancements.tutorial_advancement_pickup.title": "Fumo Food Poisioning",
@@ -2115,6 +2210,7 @@
       "advancements.eiki_advancement.title": "Eiki",
       "advancements.bootleg_fumo_advancement.descr": "Obtain questionable fumo\u0027s from wandering traders",
       "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
+      "item.fumo.tewi_item": "Tewi",
       "item.fumo.patchouli_item": "Patchouli",
       "advancements.rotate_fumo_advancement.descr": "Rotate a Fumo with a carrot on a stick!",
       "item.fumo.reimu_icon": "Icon",
@@ -2129,6 +2225,7 @@
       "advancements.reimu_advancement.title": "Reimu",
       "item.fumo.yuyuko_icon": "Icon",
       "advancements.boot_leg_reimu_advancement.title": "Bootleg Reimu",
+      "advancements.tewi_advancement.title": "Tewi",
       "advancements.patchouli_advancement.title": "Patchouli",
       "item.fumo.cirno_icon": "Icon",
       "item.fumo.fumoitem": "Debug Fumo",
@@ -2174,6 +2271,7 @@
       "advancements.fumo_tutorial_base_advancement.descr": "Fumo Mechanics",
       "advancements.patchouli_advancement.descr": "Obtain Patchouli",
       "item.fumo.yuyuko_item": "Yuyuko",
+      "entity.fumo.tewi": "Tewi",
       "entity.fumo.flandre": "Flandre Scarlet",
       "advancements.fumo_advancement.descr": "Begin your fumo adventure",
       "item.fumo.youmu_icon": "Icon",
@@ -2259,13 +2357,17 @@
       {
         "name": "Nitori",
         "children": []
+      },
+      {
+        "name": "Tewi",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "12.0.0",
+    "version": "13.0.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",

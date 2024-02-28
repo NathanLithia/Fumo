@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.fumo.client.renderer.YuyukoRenderer;
 import net.mcreator.fumo.client.renderer.YoumuRenderer;
+import net.mcreator.fumo.client.renderer.TewiRenderer;
 import net.mcreator.fumo.client.renderer.TanCirnoRenderer;
 import net.mcreator.fumo.client.renderer.ReimuRenderer;
 import net.mcreator.fumo.client.renderer.PatchouliRenderer;
@@ -48,5 +49,6 @@ public class FumoModEntityRenderers {
 		event.registerEntityRenderer(FumoModEntities.YUYUKO.get(), YuyukoRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.PATCHOULI.get(), PatchouliRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.NITORI.get(), NitoriRenderer::new);
+		event.registerEntityRenderer(FumoModEntities.TEWI.get(), TewiRenderer::new);
 	}
 }

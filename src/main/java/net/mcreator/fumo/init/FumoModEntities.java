@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.fumo.entity.YuyukoEntity;
 import net.mcreator.fumo.entity.YoumuEntity;
+import net.mcreator.fumo.entity.TewiEntity;
 import net.mcreator.fumo.entity.TanCirnoEntity;
 import net.mcreator.fumo.entity.ReimuEntity;
 import net.mcreator.fumo.entity.PatchouliEntity;
@@ -72,6 +73,8 @@ public class FumoModEntities {
 			EntityType.Builder.<PatchouliEntity>of(PatchouliEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PatchouliEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<NitoriEntity>> NITORI = register("nitori",
 			EntityType.Builder.<NitoriEntity>of(NitoriEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NitoriEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<TewiEntity>> TEWI = register("tewi",
+			EntityType.Builder.<TewiEntity>of(TewiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TewiEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -97,6 +100,7 @@ public class FumoModEntities {
 			YuyukoEntity.init();
 			PatchouliEntity.init();
 			NitoriEntity.init();
+			TewiEntity.init();
 		});
 	}
 
@@ -119,5 +123,6 @@ public class FumoModEntities {
 		event.put(YUYUKO.get(), YuyukoEntity.createAttributes().build());
 		event.put(PATCHOULI.get(), PatchouliEntity.createAttributes().build());
 		event.put(NITORI.get(), NitoriEntity.createAttributes().build());
+		event.put(TEWI.get(), TewiEntity.createAttributes().build());
 	}
 }
