@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fumo Pickup",
-    "achievementDescription": "Pick up a fumo by interacting while sneaking",
+    "achievementName": "Pickup a Fumo",
+    "achievementDescription": "Pickup a Fumo while sneaking",
     "achievementIcon": {
       "value": "CUSTOM:ItemSpinIcon"
     },

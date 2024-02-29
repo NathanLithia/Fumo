@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Bootleg",
-    "achievementDescription": "Obtain questionable fumo's from wandering traders",
+    "achievementName": "Bootleg Fumo's",
+    "achievementDescription": "Purchase Fumo's from [Wandering Traders]",
     "achievementIcon": {
       "value": "CUSTOM:ReimuItem"
     },

@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fumo Food.",
-    "achievementDescription": "Give your fumo a little treat.",
+    "achievementName": "Hungry little Fumo",
+    "achievementDescription": "Give a Fumo a little treat",
     "achievementIcon": {
       "value": "Items.COOKIE"
     },

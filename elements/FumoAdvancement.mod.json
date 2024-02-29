@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Fumo",
-    "achievementDescription": "Begin your fumo adventure",
+    "achievementDescription": "Adventure with marketable plushies",
     "achievementIcon": {
       "value": "CUSTOM:CreativeTabIcon"
     },

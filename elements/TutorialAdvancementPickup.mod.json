@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fumo Food Poisioning",
-    "achievementDescription": "Use some Rotten Flesh or a Poisionous Potato to pick up a Fumo.",
+    "achievementName": "Food Poisoning",
+    "achievementDescription": "Use [Rotten Flesh] or an [Poisonous Potato] to knock-out Fumo's",
     "achievementIcon": {
       "value": "Items.ROTTEN_FLESH"
     },

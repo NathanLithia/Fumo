@@ -24,6 +24,7 @@ import net.mcreator.fumo.entity.ReimuEntity;
 import net.mcreator.fumo.entity.PatchouliEntity;
 import net.mcreator.fumo.entity.NitoriEntity;
 import net.mcreator.fumo.entity.NewReimuEntity;
+import net.mcreator.fumo.entity.NazrinEntity;
 import net.mcreator.fumo.entity.MeilingEntity;
 import net.mcreator.fumo.entity.MarisaHatEntity;
 import net.mcreator.fumo.entity.MarisaEntity;
@@ -75,6 +76,8 @@ public class FumoModEntities {
 			EntityType.Builder.<NitoriEntity>of(NitoriEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NitoriEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<TewiEntity>> TEWI = register("tewi",
 			EntityType.Builder.<TewiEntity>of(TewiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TewiEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<NazrinEntity>> NAZRIN = register("nazrin",
+			EntityType.Builder.<NazrinEntity>of(NazrinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NazrinEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -101,6 +104,7 @@ public class FumoModEntities {
 			PatchouliEntity.init();
 			NitoriEntity.init();
 			TewiEntity.init();
+			NazrinEntity.init();
 		});
 	}
 
@@ -124,5 +128,6 @@ public class FumoModEntities {
 		event.put(PATCHOULI.get(), PatchouliEntity.createAttributes().build());
 		event.put(NITORI.get(), NitoriEntity.createAttributes().build());
 		event.put(TEWI.get(), TewiEntity.createAttributes().build());
+		event.put(NAZRIN.get(), NazrinEntity.createAttributes().build());
 	}
 }

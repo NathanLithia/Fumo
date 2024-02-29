@@ -22,6 +22,7 @@ import net.mcreator.fumo.item.ReimuIconItem;
 import net.mcreator.fumo.item.PatchouliItemItem;
 import net.mcreator.fumo.item.NitoriItemItem;
 import net.mcreator.fumo.item.NewReimuItemItem;
+import net.mcreator.fumo.item.NazrinItemItem;
 import net.mcreator.fumo.item.MeilingItemItem;
 import net.mcreator.fumo.item.MeilingIconItem;
 import net.mcreator.fumo.item.MarisaItemItem;
@@ -84,4 +85,5 @@ public class FumoModItems {
 	public static final RegistryObject<Item> PATCHOULI_ITEM = REGISTRY.register("patchouli_item", () -> new PatchouliItemItem());
 	public static final RegistryObject<Item> NITORI_ITEM = REGISTRY.register("nitori_item", () -> new NitoriItemItem());
 	public static final RegistryObject<Item> TEWI_ITEM = REGISTRY.register("tewi_item", () -> new TewiItemItem());
+	public static final RegistryObject<Item> NAZRIN_ITEM = REGISTRY.register("nazrin_item", () -> new NazrinItemItem());
 }

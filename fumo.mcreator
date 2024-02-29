@@ -2162,6 +2162,100 @@
         ]
       },
       "path": "~/Tewi"
+    },
+    {
+      "name": "Nazrin",
+      "type": "livingentity",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazrin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/client/renderer/NazrinRenderer.java",
+          "src/main/java/net/mcreator/fumo/entity/NazrinEntity.java"
+        ]
+      },
+      "path": "~/Nazrin"
+    },
+    {
+      "name": "NazrinItem",
+      "type": "item",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazrin_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/item/NazrinItemItem.java",
+          "src/main/resources/assets/fumo/models/item/nazrin_item.json"
+        ]
+      },
+      "path": "~/Nazrin"
+    },
+    {
+      "name": "NazrinSpawn",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazrin_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/NazrinSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Nazrin"
+    },
+    {
+      "name": "NazrinAdvancement",
+      "type": "achievement",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazrin_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/nazrin_advancement.json"
+        ]
+      },
+      "path": "~/Nazrin"
+    },
+    {
+      "name": "NazrinCraft",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nazrin_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/nazrin_craft.json"
+        ]
+      },
+      "path": "~/Nazrin"
     }
   ],
   "variable_elements": [],
@@ -2183,36 +2277,38 @@
       "item.fumo.creative_tab_icon": "Creative Tab Icon",
       "item.fumo.marisa_hat_icon": "Icon",
       "item.fumo.marisa_item": "Marisa Kirisame",
-      "advancements.fumo_pickup_mechanic.title": "Fumo Pickup",
+      "advancements.fumo_pickup_mechanic.title": "Pickup a Fumo",
       "item.fumo.tan_cirno_item": "Tan Cirno",
       "entity.fumo.yuyuko": "Yuyuko",
       "advancements.tewi_advancement.descr": "Obtain Tewi",
       "entity.fumo.cirno": "Cirno",
       "item.fumo.koishi_icon": "Icon",
-      "advancements.youmu_advancement.title": "Youmu",
       "entity.fumo.debug_fumo": "Debug Fumo",
+      "advancements.youmu_advancement.title": "Youmu",
       "advancements.blue_reimu_advancement.descr": "Obtain Blue Reimu with blue dye",
       "advancements.meiling_advancement.title": "Meiling",
+      "item.fumo.nazrin_item": "Nazrin",
       "advancements.koishi_advancement.descr": "Obtain Koishi",
       "item.fumo.eiki_icon": "Icon",
       "item.fumo.item_spin_icon": "Icon",
-      "advancements.boot_leg_reimu_advancement.descr": "Obtain Bootleg Reimu!",
-      "item.fumo.chen_icon": "Icon",
+      "advancements.boot_leg_reimu_advancement.descr": "Obtain Reimu bootleg",
       "advancements.chen_advancement.descr": "Obtain Chen",
+      "item.fumo.chen_icon": "Icon",
       "advancements.flande_advancement.descr": "Obtain Flandre",
       "subtitles.fumo_scream": "Fumo",
-      "advancements.tutorial_advancement_pickup.title": "Fumo Food Poisioning",
+      "advancements.tutorial_advancement_pickup.title": "Food Poisoning",
       "advancements.nitori_advancement.descr": "Obtain Nitori",
       "item.fumo.koishi_item": "Koishi Komeiji",
       "advancements.cirno_advancement.descr": "Obtain Cirno",
       "item.fumo.new_reimu_item": "Reimu Hakurei",
       "advancements.yuyuko_advancement.title": "Yuyuko",
       "advancements.eiki_advancement.title": "Eiki",
-      "advancements.bootleg_fumo_advancement.descr": "Obtain questionable fumo\u0027s from wandering traders",
-      "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
       "item.fumo.tewi_item": "Tewi",
+      "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
+      "advancements.bootleg_fumo_advancement.descr": "Purchase Fumo\u0027s from [Wandering Traders]",
       "item.fumo.patchouli_item": "Patchouli",
       "advancements.rotate_fumo_advancement.descr": "Rotate a Fumo with a carrot on a stick!",
+      "advancements.nazrin_advancement.title": "Nazrin",
       "item.fumo.reimu_icon": "Icon",
       "entity.fumo.tan_cirno": "Tan Cirno",
       "advancements.marisa_hat_advancement.title": "Marisa",
@@ -2238,44 +2334,46 @@
       "advancements.marisa_hat_advancement.descr": "Obtain Marisa",
       "entity.fumo.reimu": "Bootleg Reimu Hakurei",
       "item.fumo.meiling_item": "Meiling",
-      "advancements.fumo_pickup_mechanic.descr": "Pick up a fumo by interacting while sneaking",
+      "advancements.fumo_pickup_mechanic.descr": "Pickup a Fumo while sneaking",
       "entity.fumo.blue_reimu": "Reimu Hakurei",
       "item_group.fumo.fumo_tab": "Fumo",
-      "advancements.bootleg_fumo_advancement.title": "Bootleg",
+      "advancements.bootleg_fumo_advancement.title": "Bootleg Fumo\u0027s",
       "entity.fumo.marisa_hat": "Marisa Kirisame",
       "advancements.nitori_advancement.title": "Nitori",
       "advancements.marisa_advancement.descr": "Obtain Hatless Marisa by cooking her in a furnace.",
       "item.fumo.tan_cirno_icon": "Icon",
-      "advancements.fumo_tutorial_base_advancement.title": "Fumo Mechanics",
+      "advancements.fumo_tutorial_base_advancement.title": "Game Mechanics",
       "item.fumo.marisa_icon": "Icon",
       "advancements.cirno_advancement.title": "Cirno",
       "advancements.reimu_advancement.descr": "Obtain Reimu",
-      "advancements.fumo_feed_advancement.descr": "Give your fumo a little treat.",
+      "advancements.fumo_feed_advancement.descr": "Give a Fumo a little treat",
       "entity.fumo.meiling": "Meiling",
       "advancements.fumo_advancement.title": "Fumo",
-      "advancements.fumo_feed_advancement.title": "Fumo Food.",
+      "advancements.fumo_feed_advancement.title": "Hungry little Fumo",
       "advancements.meiling_advancement.descr": "Obtain Meiling",
       "advancements.blue_reimu_advancement.title": "Blue Reimu",
       "advancements.youmu_advancement.descr": "Obtain Youmu",
       "item.fumo.flandre_item": "Flandre Scarlet",
       "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
       "advancements.eiki_advancement.descr": "Obtain Eiki",
-      "advancements.tutorial_advancement_pickup.descr": "Use some Rotten Flesh or a Poisionous Potato to pick up a Fumo.",
+      "advancements.tutorial_advancement_pickup.descr": "Use [Rotten Flesh] or an [Poisonous Potato] to knock-out Fumo\u0027s",
       "entity.fumo.koishi": "Koishi Komeiji",
       "item.fumo.bootleg_reimu_icon": "Icon",
       "advancements.rotate_fumo_advancement.title": "Fumo Rotate.",
+      "advancements.nazrin_advancement.descr": "Obtain Nazrin",
       "item.fumo.meiling_icon": "Icon",
       "item.fumo.fumo_rotate_icon": "Fumo Rotate Icon",
       "entity.fumo.eiki": "Eiki Shiki",
       "item.fumo.cirno_item": "Cirno",
-      "advancements.fumo_tutorial_base_advancement.descr": "Fumo Mechanics",
+      "advancements.fumo_tutorial_base_advancement.descr": "Fumo Game mechanics",
       "advancements.patchouli_advancement.descr": "Obtain Patchouli",
       "item.fumo.yuyuko_item": "Yuyuko",
       "entity.fumo.tewi": "Tewi",
       "entity.fumo.flandre": "Flandre Scarlet",
-      "advancements.fumo_advancement.descr": "Begin your fumo adventure",
+      "advancements.fumo_advancement.descr": "Adventure with marketable plushies",
       "item.fumo.youmu_icon": "Icon",
       "entity.fumo.marisa": "Marisa Kirisame",
+      "entity.fumo.nazrin": "Nazrin",
       "advancements.chen_advancement.title": "Chen",
       "entity.fumo.nitori": "Nitori",
       "advancements.marisa_advancement.title": "Hatless Marisa",
@@ -2361,13 +2459,17 @@
       {
         "name": "Tewi",
         "children": []
+      },
+      {
+        "name": "Nazrin",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "13.0.0",
+    "version": "14.0.0",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",

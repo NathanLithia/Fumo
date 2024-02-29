@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Bootleg Reimu",
-    "achievementDescription": "Obtain Bootleg Reimu!",
+    "achievementDescription": "Obtain Reimu bootleg",
     "achievementIcon": {
       "value": "CUSTOM:BootlegReimuIcon"
     },

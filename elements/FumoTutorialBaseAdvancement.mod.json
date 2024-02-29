@@ -2,8 +2,8 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fumo Mechanics",
-    "achievementDescription": "Fumo Mechanics",
+    "achievementName": "Game Mechanics",
+    "achievementDescription": "Fumo Game mechanics",
     "achievementIcon": {
       "value": "CUSTOM:Fumoitem"
     },
