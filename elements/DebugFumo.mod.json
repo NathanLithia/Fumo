@@ -62,7 +62,7 @@
     "waterMob": true,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,

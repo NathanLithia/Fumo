@@ -498,8 +498,8 @@
       "registry_name": "debug_fumo",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fumo/client/renderer/DebugFumoRenderer.java",
-          "src/main/java/net/mcreator/fumo/entity/DebugFumoEntity.java"
+          "src/main/java/net/mcreator/fumo/entity/DebugFumoEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/DebugFumoRenderer.java"
         ]
       },
       "path": "~/Base"
@@ -2256,6 +2256,30 @@
         ]
       },
       "path": "~/Nazrin"
+    },
+    {
+      "name": "CustomKillEntityNoXP",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_kill_entity_no_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/CustomKillEntityNoXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Base"
     }
   ],
   "variable_elements": [],
@@ -2469,7 +2493,7 @@
   "workspaceSettings": {
     "modid": "fumo",
     "modName": "Fumo",
-    "version": "14.0.0",
+    "version": "14.0.1",
     "description": "Adds Fumos from Touhou.",
     "author": "VegaKey",
     "websiteURL": "https://modrinth.com/mod/fumo",
