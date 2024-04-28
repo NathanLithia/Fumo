@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Debug Fumo",
+    "mobName": "Sunny Milk",
     "mobLabel": "",
     "mobModelName": "ModelFumo",
-    "mobModelTexture": "debugfumo.png",
+    "mobModelTexture": "sunnymilk.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
@@ -16,11 +16,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -13421773,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -13312,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -82,7 +82,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:Fumoitem"
+      "value": "CUSTOM:SunnyMilkItem"
     },
     "livingSound": {
       "value": ""
@@ -109,10 +109,106 @@
         "value": "Items.MILK_BUCKET"
       },
       {
+        "value": "Items.COOKIE"
+      },
+      {
         "value": "Blocks.CAKE"
       },
       {
-        "value": "Items.COOKIE"
+        "value": "Items.COOKED_FISH#0"
+      },
+      {
+        "value": "Items.COOKED_FISH#1"
+      },
+      {
+        "value": "Items.COOKED_PORKCHOP"
+      },
+      {
+        "value": "Items.COOKED_BEEF"
+      },
+      {
+        "value": "Items.COOKED_CHICKEN"
+      },
+      {
+        "value": "Items.COOKED_RABBIT"
+      },
+      {
+        "value": "Items.COOKED_MUTTON"
+      },
+      {
+        "value": "Items.FISH#0"
+      },
+      {
+        "value": "Items.FISH#1"
+      },
+      {
+        "value": "Items.CHICKEN"
+      },
+      {
+        "value": "Items.BEEF"
+      },
+      {
+        "value": "Items.PORKCHOP"
+      },
+      {
+        "value": "Items.RABBIT"
+      },
+      {
+        "value": "Items.MUSHROOM_STEW"
+      },
+      {
+        "value": "Items.SUSPICIOUS_STEW"
+      },
+      {
+        "value": "Items.RABBIT_STEW"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE#0"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE#1"
+      },
+      {
+        "value": "Items.BAKED_POTATO"
+      },
+      {
+        "value": "Items.POTATO"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.BEETROOT_SOUP"
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.GOLDEN_CARROT"
+      },
+      {
+        "value": "Items.CAKE"
+      },
+      {
+        "value": "Items.EGG"
+      },
+      {
+        "value": "Items.SKULL#3"
+      },
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
       }
     ],
     "ranged": false,

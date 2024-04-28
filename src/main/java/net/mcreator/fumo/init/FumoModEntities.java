@@ -20,6 +20,7 @@ import net.mcreator.fumo.entity.YuyukoEntity;
 import net.mcreator.fumo.entity.YoumuEntity;
 import net.mcreator.fumo.entity.TewiEntity;
 import net.mcreator.fumo.entity.TanCirnoEntity;
+import net.mcreator.fumo.entity.SunnyMilkEntity;
 import net.mcreator.fumo.entity.ReimuEntity;
 import net.mcreator.fumo.entity.PatchouliEntity;
 import net.mcreator.fumo.entity.NitoriEntity;
@@ -78,6 +79,8 @@ public class FumoModEntities {
 			EntityType.Builder.<TewiEntity>of(TewiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TewiEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<NazrinEntity>> NAZRIN = register("nazrin",
 			EntityType.Builder.<NazrinEntity>of(NazrinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NazrinEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<SunnyMilkEntity>> SUNNY_MILK = register("sunny_milk",
+			EntityType.Builder.<SunnyMilkEntity>of(SunnyMilkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SunnyMilkEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -105,6 +108,7 @@ public class FumoModEntities {
 			NitoriEntity.init();
 			TewiEntity.init();
 			NazrinEntity.init();
+			SunnyMilkEntity.init();
 		});
 	}
 
@@ -129,5 +133,6 @@ public class FumoModEntities {
 		event.put(NITORI.get(), NitoriEntity.createAttributes().build());
 		event.put(TEWI.get(), TewiEntity.createAttributes().build());
 		event.put(NAZRIN.get(), NazrinEntity.createAttributes().build());
+		event.put(SUNNY_MILK.get(), SunnyMilkEntity.createAttributes().build());
 	}
 }
