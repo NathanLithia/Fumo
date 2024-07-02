@@ -29,6 +29,7 @@ import net.mcreator.fumo.client.renderer.DebugFumoRenderer;
 import net.mcreator.fumo.client.renderer.CirnoRenderer;
 import net.mcreator.fumo.client.renderer.ChenRenderer;
 import net.mcreator.fumo.client.renderer.BlueReimuRenderer;
+import net.mcreator.fumo.client.renderer.AliceRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class FumoModEntityRenderers {
@@ -54,5 +55,6 @@ public class FumoModEntityRenderers {
 		event.registerEntityRenderer(FumoModEntities.TEWI.get(), TewiRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.NAZRIN.get(), NazrinRenderer::new);
 		event.registerEntityRenderer(FumoModEntities.SUNNY_MILK.get(), SunnyMilkRenderer::new);
+		event.registerEntityRenderer(FumoModEntities.ALICE.get(), AliceRenderer::new);
 	}
 }

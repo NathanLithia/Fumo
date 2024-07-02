@@ -2374,6 +2374,100 @@
         ]
       },
       "path": "~/SunnyMilk"
+    },
+    {
+      "name": "AliceItem",
+      "type": "item",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alice_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/item/AliceItemItem.java",
+          "src/main/resources/assets/fumo/models/item/alice_item.json"
+        ]
+      },
+      "path": "~/Alice"
+    },
+    {
+      "name": "Alice",
+      "type": "livingentity",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/entity/AliceEntity.java",
+          "src/main/java/net/mcreator/fumo/client/renderer/AliceRenderer.java"
+        ]
+      },
+      "path": "~/Alice"
+    },
+    {
+      "name": "AliceSpawn",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alice_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fumo/procedures/AliceSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Alice"
+    },
+    {
+      "name": "AliceAdvancement",
+      "type": "achievement",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alice_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/advancements/alice_advancement.json"
+        ]
+      },
+      "path": "~/Alice"
+    },
+    {
+      "name": "AliceCraft",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alice_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fumo/recipes/alice_craft.json"
+        ]
+      },
+      "path": "~/Alice"
     }
   ],
   "variable_elements": [],
@@ -2401,8 +2495,9 @@
       "advancements.tewi_advancement.descr": "Obtain Tewi",
       "entity.fumo.cirno": "Cirno",
       "item.fumo.koishi_icon": "Icon",
-      "advancements.youmu_advancement.title": "Youmu",
+      "entity.fumo.alice": "Alice",
       "entity.fumo.debug_fumo": "Debug Fumo",
+      "advancements.youmu_advancement.title": "Youmu",
       "advancements.blue_reimu_advancement.descr": "Obtain Blue Reimu with blue dye",
       "advancements.meiling_advancement.title": "Meiling",
       "item.fumo.nazrin_item": "Nazrin",
@@ -2411,8 +2506,8 @@
       "item.fumo.item_spin_icon": "Icon",
       "item.fumo.sunny_milk_item": "Sunny Milk",
       "advancements.boot_leg_reimu_advancement.descr": "Obtain Reimu bootleg",
-      "item.fumo.chen_icon": "Icon",
       "advancements.chen_advancement.descr": "Obtain Chen",
+      "item.fumo.chen_icon": "Icon",
       "advancements.sunny_milk_advancement.descr": "Obtain Sunny Milk",
       "advancements.flande_advancement.descr": "Obtain Flandre",
       "subtitles.fumo_scream": "Fumo",
@@ -2423,11 +2518,11 @@
       "item.fumo.new_reimu_item": "Reimu Hakurei",
       "advancements.yuyuko_advancement.title": "Yuyuko",
       "advancements.eiki_advancement.title": "Eiki",
-      "advancements.bootleg_fumo_advancement.descr": "Purchase Fumo\u0027s from [Wandering Traders]",
-      "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
       "item.fumo.tewi_item": "Tewi",
-      "item.fumo.patchouli_item": "Patchouli",
+      "advancements.yuyuko_advancement.descr": "Obtain Yuyuko",
+      "advancements.bootleg_fumo_advancement.descr": "Purchase Fumo\u0027s from [Wandering Traders]",
       "entity.fumo.sunny_milk": "Sunny Milk",
+      "item.fumo.patchouli_item": "Patchouli",
       "advancements.rotate_fumo_advancement.descr": "Rotate a Fumo with a carrot on a stick!",
       "advancements.nazrin_advancement.title": "Nazrin",
       "item.fumo.reimu_icon": "Icon",
@@ -2471,10 +2566,13 @@
       "entity.fumo.meiling": "Meiling",
       "advancements.fumo_advancement.title": "Fumo",
       "advancements.fumo_feed_advancement.title": "Hungry little Fumo",
+      "advancements.alice_advancement.title": "Alice",
+      "advancements.alice_advancement.descr": "Obtain Alice",
       "advancements.meiling_advancement.descr": "Obtain Meiling",
       "advancements.blue_reimu_advancement.title": "Blue Reimu",
       "advancements.youmu_advancement.descr": "Obtain Youmu",
       "item.fumo.flandre_item": "Flandre Scarlet",
+      "item.fumo.alice_item": "Alice",
       "item.fumo.blue_reimu_item": "Blue Reimu Hakurei",
       "advancements.eiki_advancement.descr": "Obtain Eiki",
       "advancements.tutorial_advancement_pickup.descr": "Use [Rotten Flesh] or an [Poisonous Potato] to knock-out Fumo\u0027s",
@@ -2596,6 +2694,10 @@
       },
       {
         "name": "SunnyMilk",
+        "children": []
+      },
+      {
+        "name": "Alice",
         "children": []
       }
     ]

@@ -36,6 +36,7 @@ import net.mcreator.fumo.entity.DebugFumoEntity;
 import net.mcreator.fumo.entity.CirnoEntity;
 import net.mcreator.fumo.entity.ChenEntity;
 import net.mcreator.fumo.entity.BlueReimuEntity;
+import net.mcreator.fumo.entity.AliceEntity;
 import net.mcreator.fumo.FumoMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -81,6 +82,8 @@ public class FumoModEntities {
 			EntityType.Builder.<NazrinEntity>of(NazrinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NazrinEntity::new).fireImmune().sized(0.5f, 1f));
 	public static final RegistryObject<EntityType<SunnyMilkEntity>> SUNNY_MILK = register("sunny_milk",
 			EntityType.Builder.<SunnyMilkEntity>of(SunnyMilkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SunnyMilkEntity::new).fireImmune().sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<AliceEntity>> ALICE = register("alice",
+			EntityType.Builder.<AliceEntity>of(AliceEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AliceEntity::new).fireImmune().sized(0.5f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -109,6 +112,7 @@ public class FumoModEntities {
 			TewiEntity.init();
 			NazrinEntity.init();
 			SunnyMilkEntity.init();
+			AliceEntity.init();
 		});
 	}
 
@@ -134,5 +138,6 @@ public class FumoModEntities {
 		event.put(TEWI.get(), TewiEntity.createAttributes().build());
 		event.put(NAZRIN.get(), NazrinEntity.createAttributes().build());
 		event.put(SUNNY_MILK.get(), SunnyMilkEntity.createAttributes().build());
+		event.put(ALICE.get(), AliceEntity.createAttributes().build());
 	}
 }

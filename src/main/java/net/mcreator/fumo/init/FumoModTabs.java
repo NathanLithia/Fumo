@@ -38,5 +38,6 @@ public class FumoModTabs {
 				tabData.accept(FumoModItems.TEWI_ITEM.get());
 				tabData.accept(FumoModItems.NAZRIN_ITEM.get());
 				tabData.accept(FumoModItems.SUNNY_MILK_ITEM.get());
+				tabData.accept(FumoModItems.ALICE_ITEM.get());
 			}).withSearchBar().build());
 }
